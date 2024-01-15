@@ -1,45 +1,22 @@
 # Platform Engineer Challenge
 
-> Level: **Standard**
+> Made by: - **https://github.com/domenester**
 
-## Tech Stack
+## Dependencies Installation
 
-Expected for this challenge is Javascript. Not required to use Typescript but it is a plus.
-This position will be working full time with JS codebase.
+> npm i
 
-## Some requirements that are worth mentioning
+## Build project
 
-- Tests are a hard requirement. We expect to see tests for the code you write.
-- We expect to see a README file with instructions on how to run the code and the tests.
-- We expect tests to be mature in the sense of not only testing happy paths but also edge cases.
-- Clear separation of concerns is a must.
-- Separation of side effects from pure functions is a big plus.
+> npm run build
 
-## Instructions
+## Run project
 
-Code a function that takes a JSON file path which has URL's for images on the web and a destination root local folder.
+> npm start
 
-- The function must download the images and save them in the local folder's.
-- This folders must be named after the domain name of the URL's. Is is per domain, for example. `w3schools` and `google.images` are separated folders in side of the root destination folder
-- Also, the images that are larger than 1MB in size must not be downloaded and an log must be produced without stopping the function.
-- Furthermore, the function must return a list of the downloaded images paths.
+## Run tests
 
-The function must be able to handle the following URL's:
+> npm start
 
-- https://www.w3schools.com/w3css/img_lights.jpg
-- https://www.w3schools.com/w3css/img_forest.jpg
-- https://www.w3schools.com/w3css/img_mountains.jpg
-- https://www.w3schools.com/w3css/img_snowtops.jpg
-
-Example of JSON file to be handled.
-
-```json
-{
-  "images": [
-    "https://www.w3schools.com/w3css/img_lights.jpg",
-    "https://www.w3schools.com/w3css/img_forest.jpg",
-    "https://www.w3schools.com/w3css/img_mountains.jpg",
-    "https://www.w3schools.com/w3css/img_snowtops.jpg"
-  ]
-}
-```
+## Considerations
+ - I think that it could be specified if the JSON file path should be a local path or a remote path. I made the assumption that it was a local path.

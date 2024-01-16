@@ -1,0 +1,29 @@
+{
+  "name": "download-images",
+  "version": "1.0.0",
+  "description": "the best image downloader ever",
+  "main": "index.js",
+  "scripts": {
+    "download-images": "node ./src/index.js",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "npx eslint ./src",
+    "lint-fix": "npx eslint ./src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "axios-mock-adapter": "^1.22.0",
+    "winston": "^3.11.0"
+  }
+}
